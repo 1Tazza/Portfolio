@@ -1,0 +1,53 @@
+
+.center{display: flex; flex-direction: column; align-items: center; }
+
+.font {font-family: 'Permanent Marker', cursive;}
+
+.allPageWidth {width: 100%;}
+
+.contact {color: #134B1B; cursor: pointer;}
+
+.backgroundImg {background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.notMargin{ margin: 0%;}
+
+.green {color: #134B1B;}
+
+
+.title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
+
+.subTitle {margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0.5% 29%; line-height: 1.4;}
+
+@media (max-width: 1470px), (max-height: 800px) {
+    .subTitle {
+        margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0.5% 20%;
+    }
+  }
+
+  @media (max-width: 1110px), (max-height: 750px) {
+    .subTitle {
+        margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0.5% 13%;
+    }
+  }
+
+  @media (max-width: 860px), (max-height: 720px) {
+    .subTitle {
+        margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0.5% 5%;
+    }
+  }
+
+
+  @media (max-width: 860px), (max-height: 620px) {
+    .subTitle {
+        margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0% 3%;
+    }
+  }
+  
+
+
+.switch {display: flex; justify-content: flex-end; padding-top: 1vw; padding-right: 3vw;}
