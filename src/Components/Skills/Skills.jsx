@@ -2,20 +2,24 @@ import c from "./skills.module.css"
 import Switch from "react-switch"
 import {useSelector, useDispatch} from "react-redux"
 import {useState} from "react"
+import * as actions from "../../Redux/Actions"
 
 
 export default function Skills() {
 
+    const dispatch = useDispatch()
+
     const nightMode = useSelector(state => state.darkMode)
 
-    const [checked, setChecked] = useState(true);
+    const [checked, setChecked] = useState(!nightMode);
 
     const handleSwitchChange = (checked) => {
+    checked === true ? dispatch(actions.dayMode()) : dispatch(actions.darkMode());
     setChecked(checked);
     };
 
     return(
-        <div className={`${c.allPageWidth} ${c.backgroundImg}`}>
+        <div className={`${c.allPageWidth}`} id={checked === true ? c.backgroundImg : c.backgroundImgNight}>
 
     <div className={c.switch}>
     <Switch onChange={handleSwitchChange}
@@ -31,10 +35,11 @@ export default function Skills() {
 
     <div className={`${c.font} ${c.center} `}>
 
-     <p className={`${c.notMargin} ${c.green} ${c.title}`}>Hello I´m Tazza!</p>
-     <p className={`${c.notMargin} ${c.subTitle}`} >I am a software developer passionate about creating intuitive and dynamic user experiences.         
+     <p className={`${c.notMargin} ${c.title}`}  id={checked === true ? c.green : c.whiteTitle}>My Skills and How I used it</p>
+
+     {/* <p className={`${c.notMargin} ${c.subTitle}`} id={checked === true ? c.black : c.white} >I am a software developer passionate about creating intuitive and dynamic user experiences.         
 I am an organized and detail-oriented person, always looking for creative solutions to the challenges that arise.
-Outside of work, I enjoy outdoor activities, take pics, and spending time with my family. I am always looking to learn new things and improve my skills. If you are looking for someone with a great passion for programming and a user-centered approach, do not hesitate to <span className={c.contact}> contact me</span>!</p>
+Outside of work, I enjoy outdoor activities, take pics, and spending time with my family. I am always looking to learn new things and improve my skills. If you are looking for someone with a great passion for programming and a user-centered approach, do not hesitate to <span className={checked === true ? c.contactGreen : c.contactPurple}> contact me</span>!</p> */}
 
      </div>
     </div>) 
