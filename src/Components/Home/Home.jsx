@@ -11,7 +11,7 @@ export default function Home() {
 
     const nightMode = useSelector(state => state.darkMode)
 
-    const [checked, setChecked] = useState(true);
+    const [checked, setChecked] = useState(!nightMode);
 
     const handleSwitchChange = (checked) => {
     checked === true ? dispatch(actions.dayMode()) : dispatch(actions.darkMode());

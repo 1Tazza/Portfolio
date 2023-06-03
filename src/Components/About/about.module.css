@@ -5,19 +5,33 @@
 
 .allPageWidth {width: 100%;}
 
-.contact {color: #134B1B; cursor: pointer;}
+.contactGreen {color: #134B1B; cursor: pointer;}
 
-.backgroundImg {background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.contactPurple {color: #aa08a4; cursor: pointer;}
+
+#backgroundImg {background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+#backgroundImgNight {background-image: url("../../../public/img/pruebaFirewatchNight2.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#whiteTitle {color: #E7FAFA; text-shadow: 0 0 10px #000000; }
+
+#green {color: #134B1B;}
+
+#white {color: #FFFFFF;  }
+
+#black {color: #000000; }
+
 .notMargin{ margin: 0%;}
-
-.green {color: #134B1B;}
-
 
 .title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
 
