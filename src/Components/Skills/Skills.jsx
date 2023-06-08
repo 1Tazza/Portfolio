@@ -42,5 +42,18 @@ I am an organized and detail-oriented person, always looking for creative soluti
 Outside of work, I enjoy outdoor activities, take pics, and spending time with my family. I am always looking to learn new things and improve my skills. If you are looking for someone with a great passion for programming and a user-centered approach, do not hesitate to <span className={checked === true ? c.contactGreen : c.contactPurple}> contact me</span>!</p> */}
 
      </div>
+     <a href="#downSection" className={checked === true ? c.greenTriangle : c.whiteTriangle }></a>
+
+
+     <div className={c.info} id={checked === true ? c.darkGreen: c.darkBlue }>
+    
+     <div id="downSection">
+        
+     <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Front End</p>
+     <p id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
+
+     </div>
+     
+     </div>
     </div>) 
 } 

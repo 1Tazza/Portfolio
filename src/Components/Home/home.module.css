@@ -4,7 +4,7 @@ body{margin: 0%;}
 
 .font {font-family: 'Permanent Marker', cursive;}
 
-.allPageWidth {width: 100%;}
+.allPageWidth {width: calc(100% - 173px); margin-inline-start: auto;}
 
 #backgroundImg {
     transition-duration: 0.2s;

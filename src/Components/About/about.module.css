@@ -3,11 +3,12 @@
 
 .font {font-family: 'Permanent Marker', cursive;}
 
-.allPageWidth {width: 100%;}
+.allPageWidth {width: calc(100% - 173px); margin-inline-start: auto;}
 
 .contactGreen {color: #134B1B; cursor: pointer;}
 
 .contactPurple {color: #aa08a4; cursor: pointer;}
+
 
 #backgroundImg {
   transition-duration: 0.2s;
@@ -33,7 +34,7 @@
 
 #green {color: #134B1B;}
 
-#white {color: #FFFFFF;  }
+#white {color: #FFFFFF;}
 
 #black {color: #000000; }
 

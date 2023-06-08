@@ -9,8 +9,8 @@ export default function Nav() {
     const nightMode = useSelector(state => state.darkMode)
 
     
-    return(<div className={nightMode === false ? c.containerDay : c.containerNight}>
-    
+    return(
+    <div id={c.contenedor} className={nightMode === false ? c.containerDay : c.containerNight}>
     
     <div className={`${c.logo} ${c.nav}`}>
     <Link to="/"><span className={c.circleImage}></span></Link>

@@ -20,7 +20,7 @@ export default function About() {
     };
 
     return(
-        <div className={`${c.allPageWidth}`} id={checked === true ? c.backgroundImg : c.backgroundImgNight}>
+        <div className={`${c.allPageWidth} `} id={checked === true ? c.backgroundImg : c.backgroundImgNight}>
 
     <div className={c.switch}>
     <Switch onChange={handleSwitchChange}

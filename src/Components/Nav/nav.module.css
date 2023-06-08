@@ -12,6 +12,9 @@ div.elements > p {margin: 0%; font-family: 'Raleway', sans-serif; font-size: 15p
 
 p > a {color: white; text-decoration: none;}
 
+#contenedor{height: 100%;
+  position: fixed;}
+
 .containerDay { background-color: #1B0A0D;}
 
 .containerNight { background-color: #100024;}
