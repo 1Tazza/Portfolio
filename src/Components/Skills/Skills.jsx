@@ -1,9 +1,12 @@
 import c from "./skills.module.css"
 import Switch from "react-switch"
 import {useSelector, useDispatch} from "react-redux"
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import * as actions from "../../Redux/Actions"
-
+import img from "./pagina cart.jpg"
+import "../../../node_modules/lightbox2/dist/css/lightbox.css";
+import "../../../node_modules/lightbox2/dist/js/lightbox.js";
+import lightbox from "../../../node_modules/lightbox2/dist/js/lightbox.js"
 
 export default function Skills() {
 
@@ -18,6 +21,10 @@ export default function Skills() {
     setChecked(checked);
     };
 
+    lightbox.option( {'resizeDuration': 200,
+    'wrapAround': true,
+    "disableScrolling": true})
+   
     return(
         <div className={`${c.allPageWidth}`} id={checked === true ? c.backgroundImg : c.backgroundImgNight}>
 
@@ -49,9 +56,14 @@ Outside of work, I enjoy outdoor activities, take pics, and spending time with m
     
      <div id="downSection">
         
+     <span>
      <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Front End</p>
-     <p id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
+     <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
+     </span>
 
+     <span>
+     <a href={img} data-lightbox="image-1" data-title="HenryGameStore"><img src={img} alt="" /></a>
+     </span>
      </div>
      
      </div>
