@@ -3,7 +3,16 @@ import Switch from "react-switch"
 import {useSelector, useDispatch} from "react-redux"
 import {useState, useEffect} from "react"
 import * as actions from "../../Redux/Actions"
-import img from "./pagina cart.jpg"
+import cartImage from "./pagina cart.jpg";
+import antImg from "./antImg.png";
+import reactImg from "./reactImg.png";
+import sqlImg from "./sqlImg.png";
+import nodeImg from "./nodeImg.png";
+import sequelizeImg from "./sequelizeImg.png";
+import postgresImg from "./postgresImg.png";
+import nodemailerImg from "./nodemailerImg.png";
+import githubImg from "./githubImg.png";
+import gitImg from "./gitImg.png";
 import "../../../node_modules/lightbox2/dist/css/lightbox.css";
 import "../../../node_modules/lightbox2/dist/js/lightbox.js";
 import lightbox from "../../../node_modules/lightbox2/dist/js/lightbox.js"
@@ -56,14 +65,47 @@ Outside of work, I enjoy outdoor activities, take pics, and spending time with m
     
      <div id="downSection">
         
-     <span>
-     <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Front End</p>
-     <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
-     </span>
+     <div className={c.containerRow}>
+      <span className={c.frontEnd}>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Front End</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
+      </span>
 
-     <span>
-     <a href={img} data-lightbox="image-1" data-title="HenryGameStore"><img src={img} alt="" /></a>
-     </span>
+      <span>
+     
+      <div>
+       <img src={reactImg} className={c.reactImg} alt="" />
+       <img src={antImg} className={c.antImg} alt="" />
+      </div>
+
+       <a href={cartImage} data-lightbox="image-1" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white} >Project: HenryGameStore</p>
+      </span>
+     </div>
+
+     <div className={`${c.containerRow} ${c.frontContainer}`}>
+      <span className={c.frontEnd}>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Back End</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, we created a web server using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. We also implemented advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, we integrated with Cloudinary to handle game images. Moreover, we utilized Node.js to handle email sending through Nodemailer.</p>
+      </span>
+
+      <span className={c.containerWidth}>
+     
+      <div>
+       <img src={sqlImg} id={c.sqlImg} alt="" />
+       <img src={nodeImg} id={c.nodeImg} alt="" />
+       <img src={sequelizeImg} id={c.sequelizeImg} alt="" />
+      </div>
+      
+      <div>
+       <img src={postgresImg} id={c.postgresImg} alt="" />
+       <img src={nodemailerImg} id={c.nodemailerImg} alt="" />
+      </div>
+       
+      </span>
+     </div>
+
+
      </div>
      
      </div>

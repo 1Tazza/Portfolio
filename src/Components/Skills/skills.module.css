@@ -1,5 +1,28 @@
+.cartImg {width: 511px; height: 310px; margin-top: 24px; border-radius: 15px;}
 
+#imgNight {opacity: 0.5;}
 
+.reactImg {width: 138px; height: 65px;}
+
+#nodemailerImg { width: 94px; height: 84px;}
+
+#sqlImg {  height: 95px;}
+
+#sequelizeImg { width: 87px; height: 98px;}
+
+#nodeImg { width: 135px; height: 78px;}
+
+#postgresImg { width: 86px; height: 89px;}
+
+.antImg {width: 75px; height: 75px;}
+
+.frontEnd {width: 458px; text-align: left;}
+
+.containerRow {display: flex; flex-direction: row; justify-content: space-evenly;}
+
+.containerWidth {width: 511px; padding-top: 40px;}
+
+.frontContainer {margin-top:10%;}
 
 .center{display: flex; flex-direction: column; align-items: center; }
 
