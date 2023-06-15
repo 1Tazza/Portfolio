@@ -30,7 +30,7 @@ export default function Skills() {
     setChecked(checked);
     };
 
-    lightbox.option( {'resizeDuration': 200,
+    lightbox.option( {
     'wrapAround': true,
     "disableScrolling": true})
    
@@ -74,8 +74,8 @@ Outside of work, I enjoy outdoor activities, take pics, and spending time with m
       <span>
      
       <div>
-       <img src={reactImg} className={c.reactImg} alt="" />
-       <img src={antImg} className={c.antImg} alt="" />
+       <img src={reactImg} className={c.reactImg} alt="reactImg" />
+       <img src={antImg} className={c.antImg} alt="antImg" />
       </div>
 
        <a href={cartImage} data-lightbox="image-1" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
@@ -91,15 +91,35 @@ Outside of work, I enjoy outdoor activities, take pics, and spending time with m
 
       <span className={c.containerWidth}>
      
-      <div>
-       <img src={sqlImg} id={c.sqlImg} alt="" />
-       <img src={nodeImg} id={c.nodeImg} alt="" />
-       <img src={sequelizeImg} id={c.sequelizeImg} alt="" />
+      <div className={c.containerRow}>
+       <img src={sqlImg} id={c.sqlImg} alt="sqlImg" />
+       <img src={nodeImg} id={c.nodeImg} alt="nodeImg" />
+       <img src={sequelizeImg} id={c.sequelizeImg} alt="sequelizeImg" />
       </div>
       
-      <div>
-       <img src={postgresImg} id={c.postgresImg} alt="" />
-       <img src={nodemailerImg} id={c.nodemailerImg} alt="" />
+      <div style={{ paddingTop: '25px' }}>
+       <img src={postgresImg} id={c.postgresImg} alt="postgresImg" />
+       <img src={nodemailerImg} id={c.nodemailerImg} className={checked === false ? c.imgBackgroundNight : null} alt="nodemailerImg" />
+      </div>
+       
+      </span>
+     </div>
+
+
+     <div className={`${c.containerRow} ${c.frontContainer}`}  style={{ paddingBottom: '150px' }}>
+      <span className={c.frontEnd}>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Other Skills</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>
+      · Git: Version control system for tracking changes in code projects. <br></br>
+      · GitHub: Web-based platform for hosting and managing Git repositories.<br></br>
+      · GitFlow: Workflow and branching model that enhances collaboration and streamlines the development process.</p>
+      </span>
+
+      <span className={c.containerWidth} style={{ paddingTop: '70px' }}>
+     
+      <div className={c.containerRow} style={{ paddingLeft: '70px' }}>
+       <img src={githubImg} id={c.githubImg} className={checked === false ? c.imgBackgroundNight : null} alt="githubImg" />
+       <img src={gitImg} id={c.gitImg} alt="gitImg" />
       </div>
        
       </span>

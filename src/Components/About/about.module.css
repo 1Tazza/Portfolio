@@ -40,14 +40,16 @@
 
 .notMargin{ margin: 0%;}
 
-.title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
+.title {font-size: 70px; font-weight: lighter;}
 
 .subTitle {margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0.5% 29%; line-height: 1.4;}
 
-@media (max-width: 1470px), (max-height: 800px) {
+@media (min-width: 1470px), (min-height: 800px) {
     .subTitle {
         margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; padding: 0.5% 20%;
     }
+
+    .title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
   }
 
   @media (max-width: 1110px), (max-height: 750px) {

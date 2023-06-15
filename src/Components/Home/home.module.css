@@ -36,9 +36,9 @@ body{margin: 0%;}
 
 #purple{color: #a4469fe8}
 
-.title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
+.title {font-size: 70px; font-weight: lighter;}
 
-.subTitle {font-size: 35px; font-weight: lighter; margin-top: -11px; margin-bottom: 6.7vh;}
+.subTitle {font-size: 35px; font-weight: lighter; margin-top: -11px; margin-bottom: 10px;}
 
 .button {display:flex; justify-content: center;align-items: center;font-size: 18px; border-radius: 9px; height: 41px; width: 164px; background: none; border: 1px solid #134B1B; cursor: pointer;}
 
@@ -49,3 +49,9 @@ body{margin: 0%;}
 
 
 
+@media (min-width: 1470px), (min-height: 800px) {
+   
+    .title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
+
+    .subTitle {font-size: 35px; font-weight: lighter; margin-top: -11px; margin-bottom: 6.7vh;}
+  }

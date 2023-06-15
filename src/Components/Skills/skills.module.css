@@ -4,15 +4,22 @@
 
 .reactImg {width: 138px; height: 65px;}
 
-#nodemailerImg { width: 94px; height: 84px;}
+#nodemailerImg { width: 94px; height: 84px; margin-left: 50px;}
+
+.imgBackgroundNight {background-color: white; border-radius: 10px;}
 
 #sqlImg {  height: 95px;}
 
+#gitImg { width: 105px; height: 105px;}
+
+#githubImg { width: 113px; height: 113px;}
+
 #sequelizeImg { width: 87px; height: 98px;}
 
-#nodeImg { width: 135px; height: 78px;}
+#nodeImg { width: 135px; height: 78px; padding-top: 10px;}
 
-#postgresImg { width: 86px; height: 89px;}
+#postgresImg { width: 86px; height: 89px; padding-right: 20px;
+  padding-left: 30px;}
 
 .antImg {width: 75px; height: 75px;}
 
@@ -22,7 +29,7 @@
 
 .containerWidth {width: 511px; padding-top: 40px;}
 
-.frontContainer {margin-top:10%;}
+.frontContainer {margin-top:10%; padding-bottom: 50px;}
 
 .center{display: flex; flex-direction: column; align-items: center; }
 
