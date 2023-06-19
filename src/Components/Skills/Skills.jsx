@@ -58,16 +58,16 @@ I am an organized and detail-oriented person, always looking for creative soluti
 Outside of work, I enjoy outdoor activities, take pics, and spending time with my family. I am always looking to learn new things and improve my skills. If you are looking for someone with a great passion for programming and a user-centered approach, do not hesitate to <span className={checked === true ? c.contactGreen : c.contactPurple}> contact me</span>!</p> */}
 
      </div>
-     <a href="#downSection" className={checked === true ? c.greenTriangle : c.whiteTriangle }></a>
+     <a href="#sectionBelow" className={checked === true ? c.greenTriangle : c.whiteTriangle }></a>
 
 
      <div className={c.info} id={checked === true ? c.darkGreen: c.darkBlue }>
     
-     <div id="downSection">
+     <div id="sectionBelow">
         
      <div className={c.containerRow}>
       <span className={c.frontEnd}>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Front End</p>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Front End</p>
        <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
       </span>
 
@@ -85,7 +85,7 @@ Outside of work, I enjoy outdoor activities, take pics, and spending time with m
 
      <div className={`${c.containerRow} ${c.frontContainer}`}>
       <span className={c.frontEnd}>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Back End</p>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Back End</p>
        <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, we created a web server using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. We also implemented advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, we integrated with Cloudinary to handle game images. Moreover, we utilized Node.js to handle email sending through Nodemailer.</p>
       </span>
 
@@ -108,7 +108,7 @@ Outside of work, I enjoy outdoor activities, take pics, and spending time with m
 
      <div className={`${c.containerRow} ${c.frontContainer}`}  style={{ paddingBottom: '150px' }}>
       <span className={c.frontEnd}>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beige : c.white}>Other Skills</p>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Other Skills</p>
        <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>
       · Git: Version control system for tracking changes in code projects. <br></br>
       · GitHub: Web-based platform for hosting and managing Git repositories.<br></br>
