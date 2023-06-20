@@ -64,7 +64,7 @@ export default function Skills() {
      <div className={c.containerRow}>
       <span className={c.frontEnd}>
        <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Front End</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>React is used to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>I used React to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
       </span>
 
       <span>
@@ -82,7 +82,7 @@ export default function Skills() {
      <div className={`${c.containerRow} ${c.frontContainer}`}>
       <span className={c.frontEnd}>
        <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Back End</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, we created a web server using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. We also implemented advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, we integrated with Cloudinary to handle game images. Moreover, we utilized Node.js to handle email sending through Nodemailer.</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section.</p>
       </span>
 
       <span className={c.containerWidth}>
