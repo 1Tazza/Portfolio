@@ -1,7 +1,7 @@
 import c from "./nav.module.css"
 import {Link, useHistory} from "react-router-dom"
-import React, { useEffect, useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
+import React, { useEffect} from "react"
+import { useSelector } from "react-redux"
 
 
 export default function Nav() {
