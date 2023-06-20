@@ -1,7 +1,7 @@
 import c from "./skills.module.css"
 import Switch from "react-switch"
 import {useSelector, useDispatch} from "react-redux"
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import * as actions from "../../Redux/Actions"
 import cartImage from "./pagina cart.jpg";
 import antImg from "./antImg.png";
@@ -54,7 +54,7 @@ export default function Skills() {
      <p className={`${c.notMargin} ${c.title}`}  id={checked === true ? c.green : c.whiteTitle}>My Skills and How I used it</p>
 
      </div>
-     <a href="#sectionBelow" className={checked === true ? c.greenTriangle : c.whiteTriangle }></a>
+     <a href="#sectionBelow"  className={checked === true ? c.greenTriangle : c.whiteTriangle }>&nbsp;</a>
 
 
      <div className={c.info} id={checked === true ? c.darkGreen: c.darkBlue }>
