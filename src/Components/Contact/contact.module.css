@@ -59,7 +59,9 @@
   }
 
   @media (max-width: 1110px), (max-height: 750px) {
-    
+    .subTitle {margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; width: 100%; display: flex; justify-content: space-evenly;   margin-top: 0px; }
+
+    .title {font-size: 70px; font-weight: lighter; margin-top: -20px;}
   }
 
   @media (max-width: 860px), (max-height: 720px) {

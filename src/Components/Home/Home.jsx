@@ -1,6 +1,7 @@
 import c from "./home.module.css"
 import Switch from "react-switch"
 import {useSelector, useDispatch} from "react-redux"
+import { Link } from "react-router-dom"
 import {useState} from "react"
 import * as actions from "../../Redux/Actions"
 
@@ -38,7 +39,11 @@ export default function Home() {
      <p className={`${c.notMargin} ${c.title}`} id={checked === true ? c.green : c.white}>Matias Tazza</p>
      <p className={`${c.notMargin} ${c.subTitle}`}   id={checked === true ? c.brown : c.purple} >Full Stack Developer</p>
 
-     <button className={checked === true ? c.button: c.whiteButton}><p className={`${c.font}`} id={checked === true ? c.green : c.white} >Contact me!</p></button>
+     <Link to="/contact">
+        <button className={checked === true ? c.button: c.whiteButton} id={checked === true ? c.green : c.white}>
+            <p className={`${c.font}`}  >Contact me!</p>
+        </button>
+     </Link>
      </div>
     </div>) 
 } 

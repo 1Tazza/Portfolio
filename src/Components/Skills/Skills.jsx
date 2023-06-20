@@ -53,10 +53,6 @@ export default function Skills() {
 
      <p className={`${c.notMargin} ${c.title}`}  id={checked === true ? c.green : c.whiteTitle}>My Skills and How I used it</p>
 
-     {/* <p className={`${c.notMargin} ${c.subTitle}`} id={checked === true ? c.black : c.white} >I am a software developer passionate about creating intuitive and dynamic user experiences.         
-I am an organized and detail-oriented person, always looking for creative solutions to the challenges that arise.
-Outside of work, I enjoy outdoor activities, take pics, and spending time with my family. I am always looking to learn new things and improve my skills. If you are looking for someone with a great passion for programming and a user-centered approach, do not hesitate to <span className={checked === true ? c.contactGreen : c.contactPurple}> contact me</span>!</p> */}
-
      </div>
      <a href="#sectionBelow" className={checked === true ? c.greenTriangle : c.whiteTriangle }></a>
 

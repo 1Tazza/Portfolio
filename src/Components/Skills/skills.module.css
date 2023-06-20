@@ -130,12 +130,16 @@
 .info {position: absolute;
   top: 100vh;  width: calc(100% - 173px);}
 
-@media (max-width: 1670px) {
+@media (max-width: 1680px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 30%;}
   }
 
 @media (max-width: 1470px), (max-height: 800px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 28%;}
+  }
+
+  @media (max-width: 1280px) {
+    .title {font-size: 70px; font-weight: lighter; margin-top: -30px; margin: 0% 28%;}
   }
 
   @media (max-width: 1110px), (max-height: 750px) {

@@ -1,5 +1,5 @@
 import c from "./nav.module.css"
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
@@ -8,6 +8,21 @@ export default function Nav() {
 
     const nightMode = useSelector(state => state.darkMode)
 
+    const history = useHistory();
+
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo(0, 0);
+        };
+      
+        const unlisten = history.listen(() => {
+          scrollToTop();
+        });
+      
+        return () => {
+          unlisten();
+        };
+      }, [history]);
     
     return(
     <div id={c.contenedor} className={nightMode === false ? c.containerDay : c.containerNight}>
@@ -25,10 +40,10 @@ export default function Nav() {
     
     <div className={`${c.elements} ${c.elementsContainer}`}>
     
-    <p ><Link to="about">About</Link></p>
-    <p ><Link to="skills">My Skills</Link></p>
-    <p ><Link to="work">Work</Link></p>
-    <p id={c.marginBottom}><Link to="contact">Contact</Link></p>
+    <p ><Link to="/about">About</Link></p>
+    <p ><Link to="/skills">My Skills</Link></p>
+    <p ><Link to="/work">Work</Link></p>
+    <p id={c.marginBottom}><Link to="/contact">Contact</Link></p>
     </div>
 
     </div>)
