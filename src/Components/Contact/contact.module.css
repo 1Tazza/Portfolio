@@ -1,0 +1,74 @@
+.center{display: flex; flex-direction: column; align-items: center; }
+
+.font {font-family: 'Permanent Marker', cursive;}
+
+.allPageWidth {width: calc(100% - 173px); margin-inline-start: auto;}
+
+.contactGreen {color: #134B1B; cursor: pointer;}
+
+.contactPurple {color: #aa08a4; cursor: pointer;}
+
+.container{ width: 225px; height: 145px; display: flex; flex-direction: column; justify-content: center;  }
+
+#linkedinImg { width: 65px; height: 59px; border-radius: 5px;}
+
+#githubImg { width: 87px; height: 84px;}
+
+#gmailImg { width: 82px; height: 59px;}
+
+#backgroundImg {
+  transition-duration: 0.2s;
+    transition-timing-function: linear;
+  background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#backgroundImgNight {
+  transition-duration: 0.2s;
+    transition-timing-function: linear;
+  background-image: url("../../../public/img/pruebaFirewatchNight3.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#whiteTitle {color: #E7FAFA; text-shadow: 0 0 10px #000000; }
+
+#green {color: #134B1B;}
+
+#white {color: #FFFFFF;}
+
+#black {color: #000000; }
+
+.notMargin{ margin: 0%;}
+
+.title {font-size: 70px; font-weight: lighter;}
+
+.subTitle {margin: 0%; font-family: 'Raleway', sans-serif; font-size: 18px; text-align: center; width: 100%; display: flex; justify-content: space-evenly;   margin-top: 45px; } 
+
+@media (min-width: 1440px), (min-height: 800px) {
+    
+
+    .title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
+  }
+
+  @media (max-width: 1110px), (max-height: 750px) {
+    
+  }
+
+  @media (max-width: 860px), (max-height: 720px) {
+    
+  }
+
+
+  @media (max-width: 860px), (max-height: 620px) {
+    
+  }
+  
+
+
+.switch {display: flex; justify-content: flex-end; padding-top: 1vw; padding-right: 3vw;}
