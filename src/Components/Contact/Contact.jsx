@@ -42,21 +42,21 @@ export default function Contact() {
      <div className={`${c.subTitle} `} id={checked === true ? c.black : c.white} >
  
       <span className={c.container}>
-        <a href="https://www.linkedin.com/in/matias-tazza-168100233/" target="_blank">
+        <a href="https://www.linkedin.com/in/matias-tazza-168100233/" target="_blank" rel="noopener noreferrer">
         <img id={c.linkedinImg} src={linkedinImg} alt="" />
         </a>
         <p>in/matias-tazza-168100233</p>
       </span>
 
       <span className={c.container}>
-        <a href="https://mail.google.com/mail/?view=cm&to=tazza.personal@gmail.com" target="_blank">
+        <a href="https://mail.google.com/mail/?view=cm&to=tazza.personal@gmail.com" target="_blank" rel="noopener noreferrer">
         <img id={c.gmailImg} src={gmailImg} alt="" />
         </a>
         <p>tazza.personal@gmail.com</p>
       </span>
 
       <span style={{width: "225px", height: "145px"}}>
-        <a href="https://github.com/1Tazza" target="_blank">
+        <a href="https://github.com/1Tazza" target="_blank" rel="noopener noreferrer">
         <img className={checked === false ? c.imgBackgroundNight : null} id={c.githubImg} src={githubImg} alt="" />
         </a>
         <p style={{marginTop: "9px"}}>/1Tazza</p>
