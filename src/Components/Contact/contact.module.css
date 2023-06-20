@@ -8,7 +8,7 @@
 
 .contactPurple {color: #aa08a4; cursor: pointer;}
 
-.container{ width: 225px; height: 145px; display: flex; flex-direction: column; justify-content: center;  }
+.container{ width: 230px; height: 145px; display: flex; flex-direction: column; justify-content: center;  }
 
 #linkedinImg { width: 65px; height: 59px; border-radius: 5px;}
 
@@ -35,6 +35,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.imgBackgroundNight {background-color: white; border-radius: 10px;}
 
 #whiteTitle {color: #E7FAFA; text-shadow: 0 0 10px #000000; }
 

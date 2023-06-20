@@ -1,7 +1,7 @@
 import c from "./works.module.css"
 import Switch from "react-switch"
 import {useSelector, useDispatch} from "react-redux"
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import * as actions from "../../Redux/Actions"
 import cartImage from "./pagina cart.jpg";
 import landingImg from "./landingImg.png";
