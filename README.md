@@ -17,8 +17,8 @@ Puedes ver una demostración de mi portfolio en .
 
 En mi portfolio encontrarás una selección de los siguientes proyectos:
 
-- [Proyecto 1](enlace al repositorio o demo en línea)
-- [Proyecto 2](enlace al repositorio o demo en línea)
+- [HenryGameStore](https://pf-front-y72g-git-develop-pfgrupo3henry.vercel.app/)
+- [Dogs App](https://pidogsfrontend-production.up.railway.app/)
 
 Siéntete libre de explorar los proyectos y revisar el código fuente en los respectivos repositorios.
 
