@@ -34,6 +34,8 @@ En mi desarrollo utilizo las siguientes tecnologías y herramientas:
 - Express.js
 - PostgreSQL
 - Sequelize
+- MongoDB
+- Jest
 - Git
 
 ## Contacto
