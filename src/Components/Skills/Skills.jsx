@@ -13,6 +13,9 @@ import postgresImg from "./postgresImg.png";
 import nodemailerImg from "./nodemailerImg.png";
 import githubImg from "./githubImg.png";
 import gitImg from "./gitImg.png";
+import jest from "./jest.png";
+import mongoDb from "./mongoDb.png";
+import swagger from "./swagger.png";
 import "../../../node_modules/lightbox2/dist/css/lightbox.css";
 import "../../../node_modules/lightbox2/dist/js/lightbox.js";
 import lightbox from "../../../node_modules/lightbox2/dist/js/lightbox.js"
@@ -82,19 +85,21 @@ export default function Skills() {
      <div className={`${c.containerRow} ${c.frontContainer}`}>
       <span className={c.frontEnd}>
        <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Back End</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section.</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section. I also have experience in creating RESTful API with testing using Jest, as well as utilizing MongoDB as a NoSQL database and Mongoose as an ORM.</p>
       </span>
 
       <span className={c.containerWidth}>
      
       <div className={c.containerRow}>
        <img src={sqlImg} id={c.sqlImg} alt="sqlImg" />
+       <img src={jest} id={c.jestImg} alt="jestImg" />
        <img src={nodeImg} id={c.nodeImg} alt="nodeImg" />
        <img src={sequelizeImg} id={c.sequelizeImg} alt="sequelizeImg" />
       </div>
       
       <div style={{ paddingTop: '25px' }}>
        <img src={postgresImg} id={c.postgresImg} alt="postgresImg" />
+       <img src={mongoDb} id={c.mongoImg} alt="mongoDbImg" />
        <img src={nodemailerImg} id={c.nodemailerImg} className={checked === false ? c.imgBackgroundNight : null} alt="nodemailerImg" />
       </div>
        
@@ -108,14 +113,20 @@ export default function Skills() {
        <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>
       · Git: Version control system for tracking changes in code projects. <br></br>
       · GitHub: Web-based platform for hosting and managing Git repositories.<br></br>
-      · GitFlow: Workflow and branching model that enhances collaboration and streamlines the development process.</p>
+      · GitFlow: Workflow and branching model that enhances collaboration and streamlines the development process.<br></br>
+      · Swagger: Framework for documenting and testing RESTful APIs. Swagger provides a user-friendly interface to describe, document, and visualize API endpoints, making it easier for developers to understand and interact with APIs. It promotes consistency and simplifies the process of integrating with and consuming APIs.
+      </p>
       </span>
 
-      <span className={c.containerWidth} style={{ paddingTop: '70px' }}>
+      <span className={c.containerWidth} style={{ paddingTop: '80px' }}>
      
       <div className={c.containerRow} style={{ paddingLeft: '70px' }}>
        <img src={githubImg} id={c.githubImg} className={checked === false ? c.imgBackgroundNight : null} alt="githubImg" />
        <img src={gitImg} id={c.gitImg} alt="gitImg" />
+      </div>
+
+      <div>
+        <img src={swagger} id={c.swaggerImg} alt="swaggerImg" />
       </div>
        
       </span>

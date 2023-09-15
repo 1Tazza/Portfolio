@@ -6,6 +6,12 @@ import * as actions from "../../Redux/Actions"
 import cartImage from "./pagina cart.jpg";
 import landingImg from "./landingImg.png";
 import dogsApiImg from "./dogsApiImg.jpg";
+import coverage from "./coverage.png";
+import jest from "./jest.png";
+import mongoose from "./mongoose.png"
+import jwt from "./jwt.png";
+import mongoDb from "./mongoDb.png";
+import swagger from "./swagger.png";
 import "../../../node_modules/lightbox2/dist/css/lightbox.css";
 import "lightbox2";
 import lightbox from "lightbox2"
@@ -63,6 +69,8 @@ export default function Work() {
        <span>
         <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp}`} style={{width: "470px", height: "841px", textAlign: "left"}} id={checked === true ? c.beige : c.white}>An e-commerce website for digital and physical      video games where you can find everything you need to satisfy your gaming needs. With an attractive and user-friendly Landing Page, an intuitive navigation bar, a search bar, and a section with all the available game cards, the user experience is fluid and satisfying.<br></br> But that's not all, you can also filter games by multiple options, including price, platform, genre, and more. And if you're interested in a particular game, you can view its details and reviews before buying it. In addition, thanks to a pagination system and integration with Mercado Pago as a payment gateway, the purchase process is easy and secure. But it's not just about customers, the website also features an Admin Dashboard, where administrators can view and manage the game inventory, orders, and customers. All of this was achieved through the implementation of advanced technologies and methods in both Front-End and Back-End development.For Front-End development, we used ReactJs as a framework, which allowed us to create a dynamic and user-friendly experience, along with the implementation of Redux to manage a global store for the application. We also created a shopping cart and used tools like ant-design to improve the design and functionality of the website.On the other hand, Back-End development was equally impressive, including the creation of a web server with Express and NodeJs, and a REST API with Sequelize as an ORM for a PostgresSQL database. We also implemented advanced security features, such as user authentication and session management with JSON Web Tokens and Bcrypt, and integration with Cloudinary to handle game images. <br></br> In summary, this project was a great success thanks to the combination of advanced technologies and methods, resulting in an elegant, functional, and secure website for the sale of video games.</p>
        </span>
+         
+      {/* <span className={c.middleLine}></span> */}
 
        <span style={{width: "521px", height: "728px"}}>
        <a href={landingImg} data-lightbox="image-1" data-title="HenryGameStore Landing"><img id={checked === false ? c.imgNight : null} src={landingImg} className={c.cartImg} alt="" /></a>
@@ -89,7 +97,53 @@ export default function Work() {
      </div>
 
 
-    
+     <div className={`${c.workContainer} ${c.frontContainerRest}`}>
+       <div>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`} style={{paddingBottom: "20px"}}  id={checked === true ? c.beigeTitle : c.white}>Api Rest</p>
+      </div>
+      <div className={c.row} style={{justifyContent: "space-evenly"}}>
+       <span>
+        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp}`} style={{width: "470px", height: "238px", textAlign: "left", paddingTop: "80px"}} id={checked === true ? c.beige : c.white}>A RESTful API with a NoSQL database using MongoDB, with Mongoose as the Object-Relational Mapping (ORM) tool. The API includes JWT (JSON Web Tokens) for authentication and authorization. Additionally, I have implemented comprehensive test coverage using Jest for unit and integration testing. Furthermore, I have integrated Swagger for clear and interactive documentation of the API endpoints.</p>
+       </span>
+
+
+
+ <div>
+
+       
+
+
+
+
+
+
+       <span style={{width: "521px"}}>
+       
+       <span className={c.containerWidth} style={{ paddingTop: '80px' }}>
+     
+      <div className={`${c.containerRow} ${c.divApi1}`}>
+       <img src={mongoDb} id={c.mongoImg} alt="" />
+       <img src={jwt} id={c.jwtImg} alt="" />
+       <img src={mongoose} id={c.mongooseImg} alt="" />
+       <img src={swagger} id={c.swaggerImg} alt="swaggerImg" />
+        <img src={jest} id={c.jestImg} alt="" />
+      </div>
+
+
+      {/* <div className={c.divApi2}>
+        <img src={swagger} id={c.swaggerImg} alt="swaggerImg" />
+        <img src={jest} id={c.jestImg} alt="" />
+      </div> */}
+       
+      </span>
+      <a href={coverage} data-lightbox="image-3" data-title="Api Rest No Sql Coverage Test"><img id={checked === false ? c.imgNight : null} src={coverage} className={c.dogsImg} alt="" /></a>
+       <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link Repositorio: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://github.com/1Tazza/Api-Rest" target="_blank" rel="noopener noreferrer">API REST</a></p> 
+      </span>
+
+      </div>
+
+      </div>
+     </div>
 
 
      </div>

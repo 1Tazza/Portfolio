@@ -32,6 +32,7 @@ export default function Home() {
         uncheckedIcon={false} 
         checkedIcon={false}
         />
+        
     </div>
 
     <div className={`${c.font} ${c.center} `}>
