@@ -4,11 +4,18 @@
 
 .reactImg {width: 138px; height: 65px;}
 
-#nodemailerImg { width: 94px; height: 84px; margin-left: 50px;}
+#nodemailerImg { width: 94px; height: 84px; margin-left: 30px;}
 
 .imgBackgroundNight {background-color: white; border-radius: 10px;}
 
 #sqlImg {  height: 95px;}
+
+#jestImg{ width: 85px; height: 88px; padding-right: 10px;}
+
+#mongoImg { width: 107px; height: 106px;}
+
+#swaggerImg { width: 106px; height: 106px; padding-left: 75px;
+  padding-top: 20px;}
 
 #gitImg { width: 105px; height: 105px;}
 
