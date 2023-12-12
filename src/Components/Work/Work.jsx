@@ -75,7 +75,7 @@ export default function Work() {
        <span style={{width: "521px", height: "728px"}}>
        <a href={landingImg} data-lightbox="image-1" data-title="HenryGameStore Landing"><img id={checked === false ? c.imgNight : null} src={landingImg} className={c.cartImg} alt="" /></a>
        <a href={cartImage} data-lightbox="image-1" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
-        <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://pf-front-y72g-git-develop-pfgrupo3henry.vercel.app/" target="_blank" rel="noopener noreferrer">HenryGameStore</a></p> 
+        <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://pf-henry-front-1tazza.vercel.app/" target="_blank" rel="noopener noreferrer">HenryGameStore</a></p> 
       </span>
       </div>
      </div>
