@@ -14,6 +14,10 @@
 
 #mongoImg { width: 107px; height: 106px;}
 
+#awsImg {width: 90px; height: 60px; padding-left: 30px;}
+
+#figmaImg { width: 106px; height: 80px; padding-left: 75px;}
+
 #swaggerImg { width: 106px; height: 106px; padding-left: 75px;
   padding-top: 20px;}
 
@@ -35,6 +39,8 @@
 .containerRow {display: flex; flex-direction: row; justify-content: space-evenly;}
 
 .containerWidth {width: 511px; padding-top: 70px;}
+
+.containerWidth2 {width: 511px; padding-top: 85px;}
 
 .frontContainer {margin-top:10%; padding-bottom: 50px;}
 

@@ -16,6 +16,8 @@ import gitImg from "./gitImg.png";
 import jest from "./jest.png";
 import mongoDb from "./mongoDb.png";
 import swagger from "./swagger.png";
+import figmaImg from "./figmaImg.png";
+import awsImg from "./awsImg.png";
 import "../../../node_modules/lightbox2/dist/css/lightbox.css";
 import "../../../node_modules/lightbox2/dist/js/lightbox.js";
 import lightbox from "../../../node_modules/lightbox2/dist/js/lightbox.js"
@@ -85,10 +87,10 @@ export default function Skills() {
      <div className={`${c.containerRow} ${c.frontContainer}`}>
       <span className={c.frontEnd}>
        <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Back End</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section. I also have experience in creating RESTful API with testing using Jest, as well as utilizing MongoDB as a NoSQL database and Mongoose as an ORM.</p>
+       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section. I also have experience in creating RESTful API with testing using Jest, as well as utilizing MongoDB as a NoSQL database and Mongoose as an ORM. I have demonstrated experience in cloud service integration using AWS, specifically utilizing Amazon S3 for image storage and IAM for permissions and access management.</p>
       </span>
 
-      <span className={c.containerWidth}>
+      <span className={c.containerWidth2}>
      
       <div className={c.containerRow}>
        <img src={sqlImg} id={c.sqlImg} alt="sqlImg" />
@@ -101,6 +103,7 @@ export default function Skills() {
        <img src={postgresImg} id={c.postgresImg} alt="postgresImg" />
        <img src={mongoDb} id={c.mongoImg} alt="mongoDbImg" />
        <img src={nodemailerImg} id={c.nodemailerImg} className={checked === false ? c.imgBackgroundNight : null} alt="nodemailerImg" />
+       <img src={awsImg} id={c.awsImg} alt="awsImg" />
       </div>
        
       </span>
@@ -114,7 +117,8 @@ export default function Skills() {
       · Git: Version control system for tracking changes in code projects. <br></br>
       · GitHub: Web-based platform for hosting and managing Git repositories.<br></br>
       · GitFlow: Workflow and branching model that enhances collaboration and streamlines the development process.<br></br>
-      · Swagger: Framework for documenting and testing RESTful APIs. Swagger provides a user-friendly interface to describe, document, and visualize API endpoints, making it easier for developers to understand and interact with APIs. It promotes consistency and simplifies the process of integrating with and consuming APIs.
+      · Swagger: Framework for documenting and testing RESTful APIs. Swagger provides a user-friendly interface to describe, document, and visualize API endpoints, making it easier for developers to understand and interact with APIs. It promotes consistency and simplifies the process of integrating with and consuming APIs. <br></br>
+      · Figma: Ideal for creating mockups/drafts of how the final project would look, providing greater visualization and peace of mind for the client.
       </p>
       </span>
 
@@ -127,6 +131,7 @@ export default function Skills() {
 
       <div>
         <img src={swagger} id={c.swaggerImg} alt="swaggerImg" />
+        <img src={figmaImg} id={c.figmaImg} alt="figmaImg" />
       </div>
        
       </span>
