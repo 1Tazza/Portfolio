@@ -38,7 +38,7 @@ export default function Work() {
     "disableScrolling": true})
    
     return(
-        <div className={`${c.allPageWidth}`} id={checked === true ? c.backgroundImg : c.backgroundImgNight}>
+        <div className={`${c.allPageWidth} ${c.backgroundImg}`} id={checked === false ? c.backgroundImgNight : null}>
 
     <div className={c.switch}>
     <Switch onChange={handleSwitchChange}

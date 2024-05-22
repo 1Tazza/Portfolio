@@ -124,10 +124,12 @@
 
 .contactPurple {color: #aa08a4; cursor: pointer;}
 
-#backgroundImg {
-  transition-duration: 0.2s;
-    transition-timing-function: linear;
-  background-image: url("../../../public/img/firewatch\ day\ without\ firewatch.jpg");
+.backgroundImg {
+  /* transition-duration: 0.2s;
+    transition-timing-function: linear; 
+  */
+  transition: background-image 0.2s linear;
+  background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,15 +137,10 @@
 }
 
 #backgroundImgNight {
-  transition-duration: 0.2s;
-    transition-timing-function: linear;
-  background-image: url("../../../public/img/firewatch\ night\ without\ firewatch\ 3.jpg");
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  
+  background-image: url("../../../public/img/pruebaFirewatchNight3.png");
+ 
 }
-
 #whiteTitle {color: #E7FAFA; text-shadow: 0 0 10px #000000; }
 
 #green {color: #134B1B;}
