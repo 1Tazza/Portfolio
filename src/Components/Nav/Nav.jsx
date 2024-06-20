@@ -38,10 +38,13 @@ export default function Nav() {
     </div>
 
     
-    <div className={`${c.elements} ${c.elementsContainer}`}>
+    <div className={`${c.elements} ${c.elementsContainer1}`}>
     
     <p ><Link to="/about">About</Link></p>
     <p ><Link to="/skills">My Skills</Link></p>
+    </div>
+
+    <div className={`${c.elements} ${c.elementsContainer2}`}>
     <p ><Link to="/work">Work</Link></p>
     <p id={c.marginBottom}><Link to="/contact">Contact</Link></p>
     </div>

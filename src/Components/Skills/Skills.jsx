@@ -40,8 +40,8 @@ export default function Skills() {
     "disableScrolling": true})
    
     return(
-        <div className={`${c.allPageWidth} ${c.backgroundImg}`} id={checked === false ? c.backgroundImgNight : null}>
-
+        <div className={`${c.allPageWidth} `} >
+<div className={c.backgroundImg} id={checked === false ? c.backgroundImgNight : null}>
     <div className={c.switch}>
     <Switch onChange={handleSwitchChange}
         checked={checked}
@@ -59,40 +59,40 @@ export default function Skills() {
      <p className={`${c.notMargin} ${c.title}`}  id={checked === true ? c.green : c.whiteTitle}>My Skills and How I used it</p>
 
      </div>
-     <a href="#sectionBelow"  className={checked === true ? c.greenTriangle : c.whiteTriangle }>&nbsp;</a>
+     <a href={`#${c.sectionBelow}`}  className={checked === true ? c.greenTriangle : c.whiteTriangle }>&nbsp;</a>
 
 
      <div className={c.info} id={checked === true ? c.darkGreen: c.darkBlue }>
     
-     <div id="sectionBelow">
+     <div >
         
-     <div className={c.containerRow}>
-      <span className={c.frontEnd}>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Front End</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>I used React to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
+     <div id={c.sectionBelow} className={`${c.containerRow} `}>
+      <span className={`${c.frontEnd} ${c.innerContainer}`}  >
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font} ${c.order1} ${c.centerResponsive}`}  id={checked === true ? c.beigeTitle : c.white}>Front End</p>
+       <p className={`${c.textAlignCenter} ${c.notMargin} ${c.fontInfo} ${c.order3}`} id={checked === true ? c.beige : c.white}>I used React to build interactive and dynamic user interfaces, while Redux is used to handle the application state in a more efficient way, such as in a shopping cart. Additionally, the Ant Design library is used for components such as the search bar, menu, forms, among others.</p>
       </span>
 
-      <span>
+      <span className={c.innerContainer}>
      
-      <div>
+      <div className={c.order1}>
        <img src={reactImg} className={c.reactImg} alt="reactImg" />
        <img src={antImg} className={c.antImg} alt="antImg" />
       </div>
 
-       <a href={cartImage} data-lightbox="image-1" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white} >Project: HenryGameStore</p>
+       <a className={c.order2} href={cartImage} data-lightbox="image-1" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
+       <p className={`${c.notMargin} ${c.fontInfo} ${c.none}`} id={checked === true ? c.beige : c.white} >Project: HenryGameStore</p>
       </span>
      </div>
 
      <div className={`${c.containerRow} ${c.frontContainer}`}>
-      <span className={c.frontEnd}>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Back End</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section. I also have experience in creating RESTful API with testing using Jest, as well as utilizing MongoDB as a NoSQL database and Mongoose as an ORM. I have demonstrated experience in cloud service integration using AWS, specifically utilizing Amazon S3 for image storage and IAM for permissions and access management.</p>
+      <span className={`${c.frontEnd} ${c.innerContainer}`}>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font} ${c.order1} ${c.centerResponsive}`}  id={checked === true ? c.beigeTitle : c.white}>Back End</p>
+       <p className={`${c.notMargin} ${c.fontInfo} ${c.order3} ${c.textAlignCenter}`} id={checked === true ? c.beige : c.white}>In the Back-End development, I worked creating web servers using Express and Node.js, and utilized Sequelize as an ORM for a PostgresSQL database. I was also involved implementing advanced security features, such as user authentication and session management using JSON Web Tokens and Bcrypt. Additionally, integrating with Cloudinary to handle game images. Moreover, I utilized Node.js to handle email sending through Nodemailer. All of this integrated into an e-commerce project, which you can see in the Works section. I also have experience in creating RESTful API with testing using Jest, as well as utilizing MongoDB as a NoSQL database and Mongoose as an ORM. I have demonstrated experience in cloud service integration using AWS, specifically utilizing Amazon S3 for image storage and IAM for permissions and access management.</p>
       </span>
 
-      <span className={c.containerWidth2}>
+      <span className={`${c.order2} ${c.containerWidth2}`}>
      
-      <div className={c.containerRow}>
+      <div className={`${c.containerRow} ${c.containerRowImgs}`}>
        <img src={sqlImg} id={c.sqlImg} alt="sqlImg" />
        <img src={jest} id={c.jestImg} alt="jestImg" />
        <img src={nodeImg} id={c.nodeImg} alt="nodeImg" />
@@ -111,9 +111,9 @@ export default function Skills() {
 
 
      <div className={`${c.containerRow} ${c.frontContainer}`}  style={{ paddingBottom: '150px' }}>
-      <span className={c.frontEnd}>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`}  id={checked === true ? c.beigeTitle : c.white}>Other Skills</p>
-       <p className={`${c.notMargin} ${c.fontInfo}`} id={checked === true ? c.beige : c.white}>
+      <span className={`${c.frontEnd} ${c.innerContainer}`}>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font} ${c.order1} ${c.centerResponsive}`}  id={checked === true ? c.beigeTitle : c.white}>Other Skills</p>
+       <p className={`${c.notMargin} ${c.fontInfo} ${c.order3} ${c.textAlignLeft}`} id={checked === true ? c.beige : c.white}>
       · Git: Version control system for tracking changes in code projects. <br></br>
       · GitHub: Web-based platform for hosting and managing Git repositories.<br></br>
       · GitFlow: Workflow and branching model that enhances collaboration and streamlines the development process.<br></br>
@@ -122,14 +122,14 @@ export default function Skills() {
       </p>
       </span>
 
-      <span className={c.containerWidth} style={{ paddingTop: '80px' }}>
+      <span className={`${c.ohterSkillsImgsCont} ${c.order2} ${c.containerWidth} ${c.width100}`} >
      
-      <div className={c.containerRow} style={{ paddingLeft: '70px' }}>
+      <div className={`${c.ohterSkillsImgs1} ${c.containerRow} ${c.containerRowImgs}`}>
        <img src={githubImg} id={c.githubImg} className={checked === false ? c.imgBackgroundNight : null} alt="githubImg" />
        <img src={gitImg} id={c.gitImg} alt="gitImg" />
       </div>
 
-      <div>
+      <div className={c.ohterSkillsImgs2}>
         <img src={swagger} id={c.swaggerImg} alt="swaggerImg" />
         <img src={figmaImg} id={c.figmaImg} alt="figmaImg" />
       </div>
@@ -140,6 +140,7 @@ export default function Skills() {
 
      </div>
      
+     </div>
      </div>
     </div>) 
 } 

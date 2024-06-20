@@ -170,26 +170,149 @@
 .info {position: absolute;
   top: 100vh;  width: calc(100% - 173px);}
 
-@media (max-width: 1670px) {
+  .wptext1{
+    width: 470px; height: 700px; text-align: left; padding-top: 55px
+  }
+
+  .wptext2{
+    width: 470px; height: 801px; text-align: left;
+  }
+  
+  .wptext3{
+    width: 470px; height: 238px; text-align: left; padding-top: 30px;
+  }
+
+  .wptext4{
+    width: 470px; height: 238px; text-align: left; padding-top: 80px;
+  }
+
+  .wpImgs{
+    padding-top: 80px;
+  }
+
+  @media (max-width: 1670px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 30%;}
   }
 
   @media (max-width: 1280px), (max-height: 1024px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 28%;}
-
+    
     
   }
-
+  
   @media (max-width: 1110px), (max-height: 920px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 25%;}
     .textApp {padding-left: 0%;}
   }
-
+  
   @media (max-width: 860px), (max-height: 720px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 20%;}
   }
 
-
+  
   @media (max-width: 860px), (max-height: 620px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 10%;}
+  }
+  
+  @media (max-width: 430px) and (max-height: 932px) {
+    
+    .order1 { order: 1;}
+    
+    .order2 { order: 2;}
+    
+    .order3 { order: 3;}
+    
+    .order4 { order: 4;}
+
+    .order5 {order: 5;}
+
+    .order6 {order: 6;}
+
+    .order7 {order: 7;}
+    
+    .backgroundImg {
+      /* transition-duration: 0.2s;
+        transition-timing-function: linear; 
+      */
+      min-height: 87.75vh;
+      transition: background-image 0.2s linear;
+      background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    .allPageWidth {width: unset; margin-inline-start: unset; height: 500vh;}
+    
+    .switch {display: flex; justify-content: flex-end; padding-top: 8vw;
+      padding-right: 7vw;}
+      
+      .title {font-size: 48px; font-weight: lighter; margin-top: 30px;}
+      
+      .info {position: absolute;
+        top: 100vh;  width: unset;}
+        
+        .workContainerRes{display: flex; flex-direction: column; }
+        
+    .innerContainer {
+      display: contents;
+  }
+
+   .none{display: none;}
+
+   .cartImg {width: 377px; height: 228px; margin-top: 24px; border-radius: 15px;}
+
+   .dogsImg {width: 370px; height: 178px; border-radius: 15px;}
+
+   .maletinParrafo {display: flex; align-items: center; padding-left: 10px; color: antiquewhite; font-size: 150%; }
+
+   #maletinImg {    width: 50px;
+    height: 49px;
+    background-color: antiquewhite;
+    border-radius: 15%;}
+  
+    .infoSubtitle {font-size: 48px; font-weight: lighter;}
+
+    .wptext1{
+      width: 100%; height: 700px; text-align: left; padding-top: 0px
+    }
+
+    .wptext2{
+      width: 100%; height: 801px; text-align: left;
+    }
+
+    .wptext3{
+      width: 100%; height: 238px; text-align: left; padding-top: 0px;
+    }
+
+    .wptext4{
+      width: 100%; height: 238px; text-align: left; padding-top: 0px;
+    }
+    .wpImgs{
+      width: 100%; padding-top: 0px;
+    }
+
+    .textAlignCenter{ text-align: center; }
+
+    .textAlingPadding {padding: 5% 6% 3%;}
+
+    #mongoImg { width: 67px; height: 66px;}
+
+    #mongooseImg { width: 67px; height: 66px;}
+    
+    #jwtImg { width: 50px; height: 49px;}
+    
+    #swaggerImg { width: 66px; height: 66px; padding-left: 5px;}
+    
+    #jestImg{ width: 45px; height: 48px; padding-right: 5px;}
+
+    #sectionBelow{ scroll-margin-top: 150px;}
+
+    .whiteTriangle {
+      margin-top: 2.5vh;
+    }
+    
+    .greenTriangle {
+      margin-top: 2.5vh;
+    }
   }

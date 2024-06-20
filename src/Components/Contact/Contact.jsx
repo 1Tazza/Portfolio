@@ -52,14 +52,14 @@ export default function Contact() {
         <a href="https://mail.google.com/mail/?view=cm&to=tazza.personal@gmail.com" target="_blank" rel="noopener noreferrer">
         <img id={c.gmailImg} src={gmailImg} alt="" />
         </a>
-        <p>tazza.personal@gmail.com</p>
+        <p className={c.gmailp}>tazza.personal@gmail.com</p>
       </span>
 
-      <span style={{width: "225px", height: "145px"}}>
+      <span className={c.gitContainer} style={{width: "225px", height: "145px"}}>
         <a href="https://github.com/1Tazza" target="_blank" rel="noopener noreferrer">
         <img className={checked === false ? c.imgBackgroundNight : null} id={c.githubImg} src={githubImg} alt="" />
         </a>
-        <p style={{marginTop: "9px"}}>/1Tazza</p>
+        <p className={c.githubp}>/1Tazza</p>
       </span>
 
      </div>

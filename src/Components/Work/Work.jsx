@@ -38,8 +38,8 @@ export default function Work() {
     "disableScrolling": true})
    
     return(
-        <div className={`${c.allPageWidth} ${c.backgroundImg}`} id={checked === false ? c.backgroundImgNight : null}>
-
+      <div className={`${c.allPageWidth} `} >
+      <div className={c.backgroundImg} id={checked === false ? c.backgroundImgNight : null}>
     <div className={c.switch}>
     <Switch onChange={handleSwitchChange}
         checked={checked}
@@ -58,12 +58,12 @@ export default function Work() {
 
 
      </div>
-     <a href="#sectionBelow" className={checked === true ? c.greenTriangle : c.whiteTriangle }>&nbsp;</a>
+     <a href={`#${c.sectionBelow}`} className={checked === true ? c.greenTriangle : c.whiteTriangle }>&nbsp;</a>
 
 
      <div className={c.info} id={checked === true ? c.darkGreen: c.darkBlue }>
     
-     <div id="sectionBelow">
+     <div id={c.sectionBelow}>
         
 
      <div className={c.maletinContainer}> 
@@ -82,13 +82,13 @@ export default function Work() {
      </div>
 
 
-     <div className={c.workContainer}>
-       <div>
+     <div className={`${c.workContainer}`}>
+       <div className={c.order1}>
        <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`} style={{paddingBottom: "10px"}}  id={checked === true ? c.beigeTitle : c.white}>Kiosko App</p>
       </div>
-      <div className={c.row} style={{justifyContent: "space-evenly"}}>
-       <span>
-        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp}`} style={{width: "470px", height: "700px", textAlign: "left", paddingTop: "55px"}} id={checked === true ? c.beige : c.white}>A Single Page Application (SPA) designed for use in Candy Store. <br />
+      <div className={`${c.row} ${c.workContainerRes} ${c.innerContainer}`} style={{justifyContent: "space-evenly"}}>
+       <span className={`${c.textAlingPadding} ${c.order4}`}>
+        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp} ${c.wptext1} ${c.textAlignCenter}`}   id={checked === true ? c.beige : c.white}>A Single Page Application (SPA) designed for use in Candy Store. <br />
          It's a responsive app optimized for mobile use. <br />
 
 The main function of this application is to facilitate product price consultation and updating. React and Redux were used for the Front End to efficiently manage the application's state, providing an intuitive and accessible interface for use at the establishment's checkout. <br />
@@ -101,10 +101,10 @@ To ensure security and access control to AWS resources, Identity and Access Mana
          
       {/* <span className={c.middleLine}></span> */}
 
-       <span style={{width: "521px", height: "728px"}}>
-       <a href={kioskoPcImg} data-lightbox="image-1" data-title="Kiosko Pc"><img id={checked === false ? c.imgNight : null} src={kioskoPcImg} className={c.cartImg} alt="" /></a>
-       <a href={kioskoImg1} data-lightbox="image-1" data-title="Kiosko Mobile"><img id={checked === false ? c.imgNight : null} src={kioskoImg1} className={c.cartMobileImg} alt="" /></a>
-        <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://www.linkedin.com/feed/update/urn:li:activity:7182820381127229440/" target="_blank" rel="noopener noreferrer">MechiKioskoApp</a></p> 
+       <span className={c.innerContainer} style={{width: "521px", height: "728px"}}>
+       <a href={kioskoPcImg} className={c.none} data-lightbox="image-1" data-title="Kiosko Pc"><img id={checked === false ? c.imgNight : null} src={kioskoPcImg} className={c.cartImg} alt="" /></a>
+       <a href={kioskoImg1} className={c.order3} data-lightbox="image-1" data-title="Kiosko Mobile"><img id={checked === false ? c.imgNight : null} src={kioskoImg1} className={c.cartMobileImg} alt="" /></a>
+        <p style={{fontFamily: 'Raleway', fontSize: "20px"}} className={c.order2} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://www.linkedin.com/feed/update/urn:li:activity:7182820381127229440/" target="_blank" rel="noopener noreferrer">MechiKioskoApp</a></p> 
       </span>
       </div>
      </div>
@@ -127,20 +127,20 @@ To ensure security and access control to AWS resources, Identity and Access Mana
 
 
      <div className={c.workContainer}>
-       <div>
+       <div className={c.order1}>
        <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`} style={{paddingBottom: "20px"}}  id={checked === true ? c.beigeTitle : c.white}>HenryGameStore</p>
       </div>
-      <div className={c.row} style={{justifyContent: "space-evenly"}}>
-       <span>
-        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp}`} style={{width: "470px", height: "801px", textAlign: "left"}} id={checked === true ? c.beige : c.white}>An e-commerce website for digital and physical      video games where you can find everything you need to satisfy your gaming needs. With an attractive and user-friendly Landing Page, an intuitive navigation bar, a search bar, and a section with all the available game cards, the user experience is fluid and satisfying.<br></br> But that's not all, you can also filter games by multiple options, including price, platform, genre, and more. And if you're interested in a particular game, you can view its details and reviews before buying it. In addition, thanks to a pagination system and integration with Mercado Pago as a payment gateway, the purchase process is easy and secure. But it's not just about customers, the website also features an Admin Dashboard, where administrators can view and manage the game inventory, orders, and customers. All of this was achieved through the implementation of advanced technologies and methods in both Front-End and Back-End development.For Front-End development, we used ReactJs as a framework, which allowed us to create a dynamic and user-friendly experience, along with the implementation of Redux to manage a global store for the application. We also created a shopping cart and used tools like ant-design to improve the design and functionality of the website.On the other hand, Back-End development was equally impressive, including the creation of a web server with Express and NodeJs, and a REST API with Sequelize as an ORM for a PostgresSQL database. We also implemented advanced security features, such as user authentication and session management with JSON Web Tokens and Bcrypt, and integration with Cloudinary to handle game images. <br></br> In summary, this project was a great success thanks to the combination of advanced technologies and methods, resulting in an elegant, functional, and secure website for the sale of videogames.</p>
+      <div className={`${c.workContainerRes} ${c.row} ${c.innerContainer}`} style={{justifyContent: "space-evenly"}}>
+       <span className={c.innerContainer}>
+        <div className={`${c.notMargin} ${c.fontInfo} ${c.textApp} ${c.innerContainer} ${c.wptext2} `}  id={checked === true ? c.beige : c.white}><p className={`${c.order4} ${c.notMargin} ${c.textAlignCenter} ${c.textAlingPadding}`}>An e-commerce website for digital and physical      video games where you can find everything you need to satisfy your gaming needs. With an attractive and user-friendly Landing Page, an intuitive navigation bar, a search bar, and a section with all the available game cards, the user experience is fluid and satisfying.<br></br> But that's not all, you can also filter games by multiple options, including price, platform, genre, and more. And if you're interested in a particular game, you can view its details and reviews before buying it. In addition, thanks to a pagination system and integration with Mercado Pago as a payment gateway, the purchase process is easy and secure. But it's not just about customers, the website also features an Admin Dashboard, where administrators can view and manage the game inventory, orders, and customers.</p><p className={`${c.order6} ${c.notMargin} ${c.textAlignCenter} ${c.textAlingPadding}`}>All of this was achieved through the implementation of advanced technologies and methods in both Front-End and Back-End development.For Front-End development, we used ReactJs as a framework, which allowed us to create a dynamic and user-friendly experience, along with the implementation of Redux to manage a global store for the application. We also created a shopping cart and used tools like ant-design to improve the design and functionality of the website.On the other hand, Back-End development was equally impressive, including the creation of a web server with Express and NodeJs, and a REST API with Sequelize as an ORM for a PostgresSQL database. We also implemented advanced security features, such as user authentication and session management with JSON Web Tokens and Bcrypt, and integration with Cloudinary to handle game images. <br></br> In summary, this project was a great success thanks to the combination of advanced technologies and methods, resulting in an elegant, functional, and secure website for the sale of videogames.</p></div>
        </span>
          
       {/* <span className={c.middleLine}></span> */}
 
-       <span style={{width: "521px", height: "728px"}}>
-       <a href={landingImg} data-lightbox="image-2" data-title="HenryGameStore Landing"><img id={checked === false ? c.imgNight : null} src={landingImg} className={c.cartImg} alt="" /></a>
-       <a href={cartImage} data-lightbox="image-2" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
-        <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://pf-henry-front-1tazza.vercel.app/" target="_blank" rel="noopener noreferrer">HenryGameStore</a></p> 
+       <span className={c.innerContainer} style={{width: "521px", height: "728px"}}>
+       <a href={landingImg} className={c.order3} data-lightbox="image-2" data-title="HenryGameStore Landing"><img id={checked === false ? c.imgNight : null} src={landingImg} className={c.cartImg} alt="" /></a>
+       <a href={cartImage} className={c.order5} data-lightbox="image-2" data-title="HenryGameStore"><img id={checked === false ? c.imgNight : null} src={cartImage} className={c.cartImg} alt="" /></a>
+        <p className={c.order2} style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://pf-henry-front-1tazza.vercel.app/" target="_blank" rel="noopener noreferrer">HenryGameStore</a></p> 
       </span>
       </div>
      </div>
@@ -154,15 +154,15 @@ To ensure security and access control to AWS resources, Identity and Access Mana
 
      <div className={`${c.workContainer}`}>
        <div>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`} style={{paddingBottom: "20px"}}  id={checked === true ? c.beigeTitle : c.white}>Dogs Api</p>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font} ${c.order1}`} style={{paddingBottom: "20px"}}  id={checked === true ? c.beigeTitle : c.white}>Dogs Api</p>
       </div>
-      <div className={c.row} style={{justifyContent: "space-evenly"}}>
-       <span>
-        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp}`} style={{width: "470px", height: "238px", textAlign: "left", paddingTop: "30px"}} id={checked === true ? c.beige : c.white}>A Single Page Application (SPA) using SQL with PostgreSQL, Sequelize, Node.js, and Express.js for the back-end, and React with Redux for the front-end. This application has multiple features, including displaying dog breeds with external API integration and paging, sorting breeds alphabetically or by weight, filtering by temperament, creating breeds with controlled forms, searching via a search bar with pagination, and displaying detailed results for any particular breed.</p>
+      <div className={`${c.workContainerRes} ${c.row} ${c.innerContainer}`} style={{justifyContent: "space-evenly"}}>
+       <span className={`${c.textAlingPadding} ${c.order3}`}>
+        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp} ${c.wptext3} ${c.textAlignCenter}`}  id={checked === true ? c.beige : c.white}>A Single Page Application (SPA) using SQL with PostgreSQL, Sequelize, Node.js, and Express.js for the back-end, and React with Redux for the front-end. This application has multiple features, including displaying dog breeds with external API integration and paging, sorting breeds alphabetically or by weight, filtering by temperament, creating breeds with controlled forms, searching via a search bar with pagination, and displaying detailed results for any particular breed.</p>
        </span>
 
-       <span style={{width: "521px"}}>
-       <a href={dogsApiImg} data-lightbox="image-3" data-title="Dog App"><img id={checked === false ? c.imgNight : null} src={dogsApiImg} className={c.dogsImg} alt="" /></a>
+       <span className={c.innerContainer} style={{width: "521px"}}>
+       <a className={c.order2} href={dogsApiImg} data-lightbox="image-3" data-title="Dog App"><img id={checked === false ? c.imgNight : null} src={dogsApiImg} className={c.dogsImg} alt="" /></a>
        <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://pidogsfrontend-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Dogs App</a></p> 
       </span>
       </div>
@@ -177,27 +177,19 @@ To ensure security and access control to AWS resources, Identity and Access Mana
 
      <div className={`${c.workContainer} ${c.frontContainerRest}`}>
        <div>
-       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font}`} style={{paddingBottom: "20px"}}  id={checked === true ? c.beigeTitle : c.white}>Api Rest</p>
+       <p className={`${c.notMargin} ${c.infoSubtitle} ${c.font} ${c.order1}`} style={{paddingBottom: "20px"}}  id={checked === true ? c.beigeTitle : c.white}>Api Rest</p>
       </div>
-      <div className={c.row} style={{justifyContent: "space-evenly"}}>
-       <span>
-        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp}`} style={{width: "470px", height: "238px", textAlign: "left", paddingTop: "80px"}} id={checked === true ? c.beige : c.white}>A RESTful API with a NoSQL database using MongoDB, with Mongoose as the Object-Relational Mapping (ORM) tool. The API includes JWT (JSON Web Tokens) for authentication and authorization. Additionally, I have implemented comprehensive test coverage using Jest for unit and integration testing. Furthermore, I have integrated Swagger for clear and interactive documentation of the API endpoints.</p>
+      <div className={`${c.innerContainer} ${c.row}`} style={{justifyContent: "space-evenly"}}>
+       <span className={`${c.textAlingPadding} ${c.order4}`}>
+        <p className={`${c.notMargin} ${c.fontInfo} ${c.textApp} ${c.wptext4} ${c.textAlignCenter}`}  id={checked === true ? c.beige : c.white}>A RESTful API with a NoSQL database using MongoDB, with Mongoose as the Object-Relational Mapping (ORM) tool. The API includes JWT (JSON Web Tokens) for authentication and authorization. Additionally, I have implemented comprehensive test coverage using Jest for unit and integration testing. Furthermore, I have integrated Swagger for clear and interactive documentation of the API endpoints.</p>
        </span>
 
 
 
- <div>
-
+ <div className={c.innerContainer}>
+       <span className={`${c.innerContainer}`} style={{width: "521px"}}>
        
-
-
-
-
-
-
-       <span style={{width: "521px"}}>
-       
-       <span className={c.containerWidth} style={{ paddingTop: '80px' }}>
+       <span className={`${c.order3} ${c.containerWidth} ${c.wpImgs}`} >
      
       <div className={`${c.containerRow} ${c.divApi1}`}>
        <img src={mongoDb} id={c.mongoImg} alt="" />
@@ -214,8 +206,8 @@ To ensure security and access control to AWS resources, Identity and Access Mana
       </div> */}
        
       </span>
-      <a href={coverage} data-lightbox="image-4" data-title="Api Rest No Sql Coverage Test"><img id={checked === false ? c.imgNight : null} src={coverage} className={c.dogsImg} alt="" /></a>
-       <p style={{fontFamily: 'Raleway', fontSize: "20px"}} id={checked === true ? c.beige : c.white}>Link Repositorio: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://github.com/1Tazza/Api-Rest" target="_blank" rel="noopener noreferrer">API REST</a></p> 
+      <a className={c.order4} href={coverage} data-lightbox="image-4" data-title="Api Rest No Sql Coverage Test"><img id={checked === false ? c.imgNight : null} src={coverage} className={c.dogsImg} alt="" /></a>
+       <p style={{fontFamily: 'Raleway', fontSize: "20px"}} className={c.order2} id={checked === true ? c.beige : c.white}>Link Repositorio: <a id={checked === true ? c.beige : c.white} style={{fontSize: "23px"}} className={checked === true ? c.dayGlow : c.nightGlow}  href="https://github.com/1Tazza/Api-Rest" target="_blank" rel="noopener noreferrer">API REST</a></p> 
       </span>
 
       </div>
@@ -226,6 +218,7 @@ To ensure security and access control to AWS resources, Identity and Access Mana
 
      </div>
      
+     </div>
      </div>
     </div>) 
 } 
