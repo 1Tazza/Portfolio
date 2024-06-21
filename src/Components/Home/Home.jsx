@@ -20,8 +20,8 @@ export default function Home() {
     };
 
     return(
-        <div className={`${c.allPageWidth} ${c.backgroundImg}` } id={checked === false ? c.backgroundImgNight : null}>
-
+        <div className={`${c.allPageWidth} `} >
+      <div className={c.backgroundImg} id={checked === false ? c.backgroundImgNight : null}>
     <div className={c.switch}>
     <Switch onChange={handleSwitchChange}
         checked={checked}
@@ -45,6 +45,7 @@ export default function Home() {
             <p className={`${c.font}`}  >Contact me!</p>
         </button>
      </Link>
+     </div>
      </div>
     </div>) 
 } 

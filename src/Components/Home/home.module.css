@@ -79,7 +79,7 @@ div > a { text-decoration: none;}
     /* transition-duration: 0.2s;
       transition-timing-function: linear; 
     */
-    min-height: unset;
+    min-height: 87.75vh;
     transition: background-image 0.2s linear;
     background-image: url("../../../public/img/4k-firewatch-sunny-day-wallpaper-2048x1152.jpg");
     background-size: cover;

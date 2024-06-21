@@ -200,7 +200,7 @@
     
   }
   
-/*   @media (max-width: 1110px), (max-height: 920px) {
+  @media (max-width: 1110px), (max-height: 920px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 25%;}
     .textApp {padding-left: 0%;}
   }
@@ -212,7 +212,7 @@
   
   @media (max-width: 860px), (max-height: 620px) {
     .title {font-size: 70px; font-weight: lighter; margin-top: 1vw; margin: 0% 10%;}
-  } */
+  }
   
   @media (max-width: 550px) and (max-height: 932px) {
     
