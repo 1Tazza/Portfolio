@@ -64,7 +64,7 @@ div > a { text-decoration: none;}
   .subTitle {font-size: 35px; font-weight: lighter; margin-top: -11px; margin-bottom: 6.7vh;}
 }
 
-@media (max-width: 500px) and (max-height: 932px) {
+@media (max-width: 500px) and (max-height: 1000px) {
   
   .allPageWidth {width: unset; margin-inline-start: unset; height: 87.7vh;}
 
