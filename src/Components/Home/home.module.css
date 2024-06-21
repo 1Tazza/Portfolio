@@ -57,7 +57,7 @@ div > a { text-decoration: none;}
 
 
 
-@media (min-width: 1470px), (min-height: 800px) {
+@media (max-width: 1470px), (max-height: 800px) {
   
   .title {font-size: 70px; font-weight: lighter; margin-top: 1vw;}
   
